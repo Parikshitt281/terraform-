@@ -9,6 +9,7 @@ pipeline {
                 sudo terraform plan 
                 sudo terraform apply 
                 sudo echo completed
+                sudo mkdir dir1
                 '''
             }
         }
