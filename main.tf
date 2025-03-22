@@ -3,13 +3,11 @@ provider "aws" {
 
 }
 
+resource "aws_instance" "web" {
+  ami           = "ami-0b6d6dacf350ebc82"
+  instance_type = "t3.micro"
 
-resource "aws_instance"."terra1" {
-                  
-          ami = "ami-0b6d6dacf350ebc82"
-          instance_type = "t2.micro"
-
-    tags = {
-    Name = "instance"
+  tags = {
+    Name = "HelloWorld"
   }
 }
