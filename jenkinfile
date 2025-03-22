@@ -7,9 +7,7 @@ pipeline {
                 sh '''
                 sudo terraform init
                 sudo terraform plan 
-                sudo terraform apply 
-                sudo echo completed
-                sudo mkdir dir1
+                sudo terraform apply --auto-approve
                 '''
             }
         }
